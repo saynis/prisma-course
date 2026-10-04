@@ -97,7 +97,7 @@ npm init -y
 **Step 2 — Install packages**
  
 ```bash
-npm install prisma@7 --save-dev
+npm install prisma@7
 npm install @prisma/client@7 
 ```
  
@@ -164,8 +164,7 @@ We explain these two blocks in Lesson 3.
 2. **Wrong password or port in `DATABASE_URL`.** Test the same details in `psql` first. If special characters are in the password (like `@` or `#`), they must be URL-encoded.
 3. **Installing Prisma without a version.** Without `@7`, you may get a newer major version that works differently from this course.
 4. **Committing `.env` to Git.** It contains your password. Always add it to `.gitignore`.
-5. **Forgetting `"type": "module"`.** The generated client may fail to import.
-## Mini Practice
+
  
 1. Run `npx prisma --version`. Write down the Prisma version.
 2. Open `schema.prisma`. Find the line that says which database provider you use.
